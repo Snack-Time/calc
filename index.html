@@ -6,9 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
 <body>
-    
+    <div id="calculator-container">
+        <div id="display-container">
+            <div id="oldOperandDisplay">
+                <p class="text-display" id="oldOperand"></p>
+            </div>
+            
+            <div id="currentOperandDisplay">
+                <p class="text-display" id="newOperand">123456789+-*/=</p>
+            </div>
+        </div>
+        <div id="button-container">
+            <button class="num-button" value="1">1</button>
+            <button class="num-button" value="2">2</button>
+            <button class="num-button" value="3">3</button>
+            <button class="num-button" value="4">4</button>
+            <button class="num-button" value="5">5</button>
+            <button class="num-button" value="6">6</button>
+            <button class="num-button" value="7">7</button>
+            <button class="num-button" value="8">8</button>
+            <button class="num-button" value="9">9</button>
+            <button class="operator-button" value="+">+</button>
+            <button class="operator-button" value="-">-</button>
+            <button class="operator-button" value="*">x</button>
+            <button class="operator-button" value="%">%</button>
+            <button class="operator-button" value="=">=</button>
+            <button class="operator-button" value="CLEAR">CLEAR</button>
+        </div>
+    </div>
+
 </body>
 </html>
