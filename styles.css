@@ -12,21 +12,27 @@ div#display-container {
     margin-bottom: 20px;
 }
 
+div#oldOperandDisplay {
+    height: 15px;
+    margin-bottom: 2.5px;
+}
 
+div#currentOperandDisplay {
+    height: 25px;
+}
 
 p.text-display {
     font-family: OCR A Std, monospace;
     text-align: right;
+    margin: 0px;
 }
 
 p#oldOperand {
-    font-size: small;
-    margin: 0%;
+    font-size: 14px;
 }
 
 p#newOperand {
-    font-size: 22px;
-    margin-top: 0%;
+    font-size: 24px;
 }
 
 div#calculator-container {
