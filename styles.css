@@ -1,24 +1,33 @@
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgb(34, 34, 34);
 }
 
+h1 {
+    color: greenyellow;
+}
+
+div#calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 350px;
+    background-color: rgb(52, 52, 196);
+    border: solid 1px rgb(48, 48, 90);
+}
+
+/* DISPLAY */
+
 div#display-container {
-    height: 7.5%;
+    height: 45px;
     width: 300px;
     background-color: grey;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-div#oldOperandDisplay {
-    height: 15px;
-    margin-bottom: 2.5px;
-}
-
-div#currentOperandDisplay {
-    height: 25px;
 }
 
 p.text-display {
@@ -27,30 +36,59 @@ p.text-display {
     margin: 0px;
 }
 
-p#oldOperand {
+div#oldOperandDisplay {
+    height: 15px;
+    margin-bottom: 2.5px;
     font-size: 14px;
 }
 
-p#newOperand {
+div#currentOperandDisplay {
+    height: 25px;
     font-size: 24px;
 }
 
-div#calculator-container {
+/* BUTTONS */
+
+div#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+div#left-buttons {
+    width: 75%;
+    margin-left: 15px;
+}
+
+div#right-buttons {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 600px;
-    width: 350px;
-    background-color: rgb(52, 52, 196);
-    border: solid 1px red;
+    width: 25%;
+}
+
+button {
+    width: 70px;
+    height: 40px;
+    text-align: start;
+    margin: 2.5px;
 }
 
 button.num-button {
-    background-color: aliceblue;
+    background-color: rgb(255, 249, 235);
     color: rgb(5, 5, 58);
 } 
 
 button.operator-button {
     background-color: red;
     color: whitesmoke;
+}
+
+p#fakeCalculatorBrand {
+    height: auto;
+    width: 325px;
+    margin-top: 100px;
+    padding: 0px;
+    text-align: end;
+    color:white;
+    font-family: Andale Mono, monospace;
 }
